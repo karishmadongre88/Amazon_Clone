@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <div class="logo-container">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/amazon-dark-logo-png-transparent.png" alt=""
+                    style="width: 170px; height: 60px;">
+            </div>
+
+            <div class="address-container">
+                <p style="font-size: small; color: rgb(194, 188, 188); margin-left: 22px; margin-top: 13px;">Hello</p>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="address-svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+
+
+                    <p style="margin-top: 2px; margin-left: -10px;">Select your Address</p>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <select class="search-select">
+                    <option value="">All</option>
+                </select>
+                <input type="text" class="search-input" placeholder="Search Amazon.in">
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-svg" viewBox="0 0 32 32">
+                    <path
+                        d="M21.15 19.74a12 12 0 1 0-1.41 1.41l10.55 10.56 1.41-1.41zM12 22a10 10 0 1 1 10-10 10 10 0 0 1-10 10z"
+                        data-name="49-Search" />
+                </svg>
+            </div>
+
+            <div class="lang-container">
+                <p class="lang">Language</p>
+                <div>
+                    <img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt=""
+                        style="height: 15px; width: 25px; margin-right: 5px; margin-left: 5px; margin-top: 5px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="lang-svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="sign-container">
+                <p class="sign">Hello, sign in</p>
+                <div style="display: flex;">
+                    <h4>Account & Lists</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="sign-svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="return-container">
+                <p class="return">Return</p>
+                <h4>& Orders</h4>
+            </div>
+
+            <div class="cart-container">
+                <svg xmlns="http://www.w3.org/2000/svg" class="cart-svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                <p class="cart">Cart</p>
+            </div>
+
+        </div>
+    </header>
+    <section class="header2">
+        <div class="header2-container">
+            <div style="display: flex;">
+                <li><svg xmlns="http://www.w3.org/2000/svg" id="sidebar" class="all-svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
+                    All</li>
+                <li>Sell</li>
+                <li>Amazon miniTV</li>
+                <li>Best Seller</li>
+                <li>Mobiles</li>
+                <li>Customer Services</li>
+                <li>Today's Deals</li>
+                <li>Electronics</li>
+                <div style="display:flex">
+                    <li>Prime
+                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 5px; margin-left: 5px;"
+                            class="lang-svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </li>
+                </div>
+                <li>Amazon Play</li>
+            </div>
+            <div>
+                <img src="images/farziimg.jpg" alt="">
+            </div>
+
+        </div>
+
+        <!-- ............................sidebarnavigation..................... -->
+        <div class="sidebar-navigation" id="sidebar-navigationbar">
+            <div class="sidebar-left-part">
+                <div class="sidebar-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="sidebar-svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg>
+                    <h1 style="font-size: larger; margin-left: 8px;">Hello, sign in</h1>
+                </div>
+
+                <div class="sidebar-body">
+
+                    <div class="sidebar-body1">
+                        <h3 style="color: rgb(41, 41, 78); font-size: 18px; margin-top: 10px;">Trending</h3>
+                        <p class="body1-li">Best Sellers</p>
+                        <p class="body1-li">New Release</p>
+                        <p class="body1-li" style="margin-bottom: 15px;">Movers and Shakers</p>
+                    </div>
+                    <div class="sidebar-body1">
+                        <h3 style="color: rgb(41, 41, 78); font-size: 18px; margin-top: 15px;">Digital Content And
+                            Devices</h3>
+                        <p>Amazon miniTV-Free Entertainment</p>
+                        <div class="body1-li">
+                            <p>Echo & Alexa</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="body1-li">
+                            <p>fire TV</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="body1-li">
+                            <p>Kindely E-readers & eBooks</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="body1-li">
+                            <p>Audibles Adiobooks</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="body1-li">
+                            <p>Amazon Prime Video</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="body1-li">
+                            <p style="margin-bottom: 15px;">Amazon Prime Music</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sidebar-body1">
+                        <h3 style="color: rgb(41, 41, 78); font-size: 18px; margin-top: 15px;">Shop By Category</h3>
+                        <div class="body1-li">
+                            <p>Mobiles, Computers</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="body1-li">
+                            <p>TV, Applinces, Electronics</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="body1-li">
+                            <p>Men's Fashion</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <div class="body1-li">
+                            <p>See All</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="sidebar-body1">
+                        <h3 style="color: rgb(41, 41, 78); font-size: 18px; margin-top: 10px;">Programs & Features</h3>
+                        <div class="body1-li">
+                            <p class="body1-li">Gift Cards & mobile Recharge</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="body1-svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                        <p class="body1-li">Flight tickets</p>
+                        <p class="body1-li" style="margin-bottom: 15px;">Clearance Store</p>
+                    </div>
+                    <div class="sidebar-body1">
+                        <h3 style="color: rgb(41, 41, 78); font-size: 18px; margin-top: 10px;">Help & Settings</h3>
+                        <p class="body1-li">Your Account</p>
+                        <p class="body1-li">Customer Services</p>
+                        <p class="body1-li" style="padding-bottom: 15px;">Sign in</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="sidebar-close" id="close-btn-svg"><svg xmlns="http://www.w3.org/2000/svg" class="close-btn"
+                    style="width: 30px; height:30px;" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+
+    </section>
+
+    <section class="image-container">
+        <div class="image-list">
+            <div class="img-item">
+                <img src="https://m.media-amazon.com/images/I/71vdTR50hFL._SX3000_.jpg" alt="">
+            </div>
+            <div class="img-item">
+                <img src="https://m.media-amazon.com/images/I/614bisUUxlL._SX3000_.jpg" alt="">
+            </div>
+            <div class="img-item">
+                <img src="https://m.media-amazon.com/images/I/613-gA49v1L._SX3000_.jpg" alt="">
+            </div>
+            <div class="img-item">
+                <img src="https://m.media-amazon.com/images/I/61GnAucagBL._SX3000_.png" alt="">
+            </div>
+            <div class="img-item">
+                <img src="https://m.media-amazon.com/images/I/61gPOiG6YiL._SX3000_.jpg" alt="">
+            </div>
+            <div class="img-item">
+                <img src="https://m.media-amazon.com/images/I/619rl+QqjwL._SX3000_.jpg" alt="">
+            </div>
+            <div class="img-item">
+                <img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" alt="">
+            </div>
+            <div class="img-item">
+                <img src="https://m.media-amazon.com/images/I/71jhnI7aVJL._SX3000_.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="btn-left" class="slide-btn">L</button>
+            <button id="btn-right" class="slide-btn">R</button>
+        </div>
+    </section>
+
+    <section class="home-style">
+        <main class="card-product-container">
+            <div class="card-product">
+                <h1
+                    style="font-size: 23px; padding-top: 10px; padding-left: 10px; padding-right: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Revamp your home in style</h1>
+                <div class="card-product-img-container">
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_1_Low._SY116_CB670263840_.jpg"
+                            alt="">
+                        <p>Bedshit,container and <br> more</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_2_Low._SY116_CB670263840_.jpg"
+                            alt="">
+                        <p>Home Decoration</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_3_Low._SY116_CB670263840_.jpg"
+                            alt="">
+                        <p>Home storage</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_4_Low._SY116_CB670263840_.jpg"
+                            alt="">
+                        <p>Lighting Solution</p>
+                    </div>
+
+                </div>
+                <p
+                    style="margin-top: 26px; margin-left: 10px; font-size: 16px; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <a href="" style="text-decoration: none; color: rgb(116, 187, 215);">Explore all</a>
+                </p>
+            </div>
+
+        </main>
+        <main class="card-product-container">
+            <div class="card-product">
+                <h1
+                    style="font-size: 23px; padding-top: 10px; padding-left: 10px; padding-right: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Up to 60% off | Styles for men</h1>
+                <div class="card-product-img-container">
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg"
+                            alt="">
+                        <p>Bedshit,container more</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-186-116._SY116_CB636110853_.jpg"
+                            alt="">
+                        <p>Home Decoration</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-186-116._SY116_CB636110853_.jpg"
+                            alt="">
+                        <p>Home storage</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg"
+                            alt="">
+                        <p>Lighting Solution</p>
+                    </div>
+
+                </div>
+                <p
+                    style="margin-top: 20px; margin-left: 10px; font-size: 16px; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <a href="" style="text-decoration: none; color: rgb(116, 187, 215);">See all offers</a>
+                </p>
+            </div>
+
+        </main>
+        <main class="card-product-container">
+            <div class="card-product">
+                <h1
+                    style="font-size: 23px; padding-top: 10px; padding-left: 10px; padding-right: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Up to 70% off | Clearance store</h1>
+                <div class="card-product-img-container">
+                    <div class="card-product-img1" style="padding: 20px;">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg"
+                            alt="" style="width: 265px; height: 260px; margin-left: -7px;">
+                    </div>
+                    <p
+                        style=" margin-left: 10px; font-size: 16px; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        <a href="" style="text-decoration: none; color: rgb(116, 187, 215);">See more</a>
+                    </p>
+                </div>
+
+        </main>
+        <main class="card-product-container1">
+            <div class="card-product1">
+                <h1
+                    style="font-size: 23px; padding-top: 10px; padding-left: 10px; padding-right: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Sign in for your best experience</h1>
+                <div class="" style="padding: 20px;">
+                    <input type="text"
+                        style="padding: 8px; width: 100%; background-color: orange; border: none; border-radius: 10px; margin-left: -7px;">
+                </div>
+            </div>
+            <img src="https://m.media-amazon.com/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg"
+                style="margin-top: 20px; height: 235px; width: 300px; margin-left: 5px;">
+
+        </main>
+    </section>
+    <section class="home-style" style="margin-top: -25px;">
+        <main class="card-product-container">
+            <div class="card-product">
+                <h1
+                    style="font-size: 23px; padding-top: 10px; padding-left: 10px; padding-right: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Book in advance for Holi</h1>
+                <div class="card-product-img-container">
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYMOVIE/travelQC/Flight_186x116._SY116_CB618818544_.jpg"
+                            alt="">
+                        <p>Get up to 2000 off an <br> flights</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYMOVIE/travelQC/Train_186x116._SY116_CB618818544_.jpg"
+                            alt="">
+                        <p>zero payment Gateway <br> charges</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYMOVIE/travelQC/Train_186x116._SY116_CB618818544_.jpg"
+                            alt="">
+                        <p>Garanteed reward on <br> bus tickets</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYMOVIE/travelQC/Accessory_186x116._SY116_CB618818544_.jpg"
+                            alt="">
+                        <p>product need your travel <br> needs</p>
+                    </div>
+
+                </div>
+                <p
+                    style="margin-top: 26px; margin-left: 10px; font-size: 16px; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <a href="" style="text-decoration: none; color: rgb(116, 187, 215);">See all offers</a>
+                </p>
+            </div>
+        </main>
+        <main class="card-product-container">
+            <div class="card-product">
+                <h1
+                    style="font-size: 23px; padding-top: 10px; padding-left: 10px; padding-right: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Automotive essentials | Up to 60% off</h1>
+                <div class="card-product-img-container">
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg"
+                            alt="">
+                        <p>Cleaning accessories</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg"
+                            alt="">
+                        <p>Tyre & rim car</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg"
+                            alt="">
+                        <p>Helmets</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg"
+                            alt="">
+                        <p>Vaccumw Cleaner</p>
+                    </div>
+
+                </div>
+                <p
+                    style="margin-top: 20px; margin-left: 10px; font-size: 16px; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <a href="" style="text-decoration: none; color: rgb(116, 187, 215);">See more</a>
+                </p>
+            </div>
+        </main>
+        <main class="card-product-container">
+            <div class="card-product">
+                <h1
+                    style="font-size: 23px; padding-top: 10px; padding-left: 10px; padding-right: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Up to 60% off | Professional tools, testing</h1>
+                <div class="card-product-img-container">
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2018/QC/Tools1x._SY116_CB424026090_.jpg"
+                            alt="">
+                        <p>Professional Tools</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/2._SY116_CB643952439_.jpg"
+                            alt="">
+                        <p>Measuring Instrument</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/2._SY116_CB643952439_.jpg"
+                            alt="">
+                        <p>Cleaning supplies</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2018/QC/med1x._SY116_CB424026091_.jpg"
+                            alt="">
+                        <p>Medical Supplies</p>
+                    </div>
+
+                </div>
+                <p
+                    style="margin-top: 20px; margin-left: 10px; font-size: 16px; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <a href="" style="text-decoration: none; color: rgb(116, 187, 215);">See more</a>
+                </p>
+            </div>
+        </main>
+        <main class="card-product-container">
+            <div class="card-product">
+                <h1
+                    style="font-size: 23px; padding-top: 10px; padding-left: 10px; padding-right: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Starting ₹87 | Amazon Brands & more</h1>
+                <div class="card-product-img-container">
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/baugwsept/xcm_banners_tile2-kitchen_186x116_in-en._SY116_CB612501062_.jpg"
+                            alt="">
+                        <p>Professional Tools</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/baugwsept/xcm_banners_tile3-home_186x116_in-en._SY116_CB612501076_.jpg"
+                            alt="">
+                        <p>Measuring Instrument</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/baugwsept/xcm_banners_tile1-kitchen_186x116_in-en._SY116_CB612501057_.jpg"
+                            alt="">
+                        <p>Cleaning supplies</p>
+                    </div>
+                    <div class="card-product-img">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/baugwsept/xcm_banners_tile4-home_186x116_in-en._SY116_CB612501080_.jpg"
+                            alt="">
+                        <p>Medical Supplies</p>
+                    </div>
+
+                </div>
+                <p
+                    style="margin-top: 20px; margin-left: 10px; font-size: 16px; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    <a href="" style="text-decoration: none; color: rgb(116, 187, 215);">Shop Now</a>
+                </p>
+            </div>
+        </main>
+
+    </section>
+    <section class="today-deal-container">
+        <div class="today-deal">
+            <div class="deal-heading">
+                <h1>Today's Deals</h1>
+                <p style="padding: 10px;"><a href=""
+                        style="text-decoration: none; color: rgb(35, 106, 134); font-size: 13px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        See all Details </a></p>
+            </div>
+
+            <div class="deal-list-container">
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/41skB7kHQbL._AC_SY200_.jpg" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 39% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">High Performance Desktop Computer</p>
+                </div>
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/41xfzQ2MeAL._AC_SY200_.jpg" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 40% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">iQOO Neo 7| starting 3167/month</p>
+                </div>
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/41ATQlB-gXL._AC_SY200_.jpg" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 50% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">Jaw dropping prices on Zebronics</p>
+                </div>
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/31G1NouVxaL._AC_SY200_.jpg" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 39% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">Jaw dropping Deals on Handsets</p>
+                </div>
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/41CK1CvkW6L._AC_SY200_.jpg" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 27% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">Best Offers from Vguard products</p>
+                </div>
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/31zWbEB+13L._AC_SY200_.jpg" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 27% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">Best Offers from Vguard products</p>
+                </div>
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/41-uUmseGIL._AC_SY200_.jpg" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 27% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">Best Offers from Vguard products</p>
+                </div>
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/713llR6tQxL._AC_SY200_.png" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 27% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">Best Offers from Vguard products</p>
+                </div>
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/51UPYN7wTEL._AC_SY200_.jpg" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 27% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">Best Offers from Vguard products</p>
+                </div>
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/41ZsD6ajiZL._AC_SY200_.png" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 27% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">Best Offers from Vguard products</p>
+                </div>
+                <div class="deal-list">
+                    <img src="https://m.media-amazon.com/images/I/41CK1CvkW6L._AC_SY200_.jpg" alt="">
+                    <div class="deal-bottom">
+                        <p class="deal-bottom-p1">upto 27% off</p>
+                        <p class="deal-bottom-p2">Deal off the Day</p>
+                    </div>
+                    <p class="deal-bottom-p3">Best Offers from Vguard products</p>
+                </div>
+            </div>
+
+            <div class="deal-btn-container">
+                <button class="deal-btn" id="deal-btn-left">L</button>
+                <button class="deal-btn" id="deal-btn-right">R</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="today-deal-container1">
+        <div class="today-deal">
+            <div class="deal-heading">
+                <h1>Up to 60% off | Curated furniture picks for your home</h1>
+                <p style="padding: 10px;"><a href=""
+                        style="text-decoration: none; color: rgb(35, 106, 134); font-size: 13px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        Visit the Store </a></p>
+            </div>
+
+            <div class="deal-list-container">
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/71RpTYfbRiL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/81uJOXAfODL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/71Ar15Ki1jL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/61AVMkuN+BL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/71w2Uk3F3aL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/61IA8eSPIWL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/61IA8eSPIWL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/71gqs-m95EL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/71Ylbr4COIL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/71aJ5xKHwML._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/61G29EjpsTL._AC_SY200_.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="deal-btn-container">
+                <button class="deal1-btn" id="deal-btn1-left">L</button>
+                <button class="deal1-btn" id="deal-btn2-right">R</button>
+            </div>
+        </div>
+    </section>
+    <section class="today-deal-container1">
+        <div class="today-deal">
+            <div class="deal-heading">
+                <h1>Up to 60% off | Home décor picks from local shops</h1>
+                <p style="padding: 10px;"><a href=""
+                        style="text-decoration: none; color: rgb(35, 106, 134); font-size: 13px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        Visit the Store </a></p>
+            </div>
+
+            <div class="deal-list-container">
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/81WY43xc5oL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/71rH7Skt1QL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/71rH7Skt1QL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/81Tmbn0u6VL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/71rH7Skt1QL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/415bAxzzGZL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/81WwW7rZSaL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/81WwW7rZSaL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/81WwW7rZSaL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/81Tmbn0u6VL._AC_SY200_.jpg" alt="">
+                </div>
+                <div class="deal-list1">
+                    <img src="https://m.media-amazon.com/images/I/81Tmbn0u6VL._AC_SY200_.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="deal-btn-container">
+                <button class="deal1-btn" id="deal-btn1-left">L</button>
+                <button class="deal1-btn" id="deal-btn2-right">R</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- last section -->
+    
+    <section class="back-top">
+        <div class="back-to-top">
+            <p>Back to Top</p>
+        </div>
+    </section>
+    <section class="last-section">
+        <div class="last-section-heading">
+            <div class="part1">
+                <h1>Get to Know Us</h1>
+                <li>About us</li>
+                <li>Careers</li>
+                <li>Press releases</li>
+                <li>Amazon Science</li>
+            </div>
+            <div class="part1">
+                <h1>Connect With us</h1>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </div>
+            <div class="part1">
+                <h1>Make Money with Us</h1>
+                <li> Sell on Amazon</li>
+                <li>Sell on Amazon Accelators</li>
+                <li>Press releases</li>
+                <li>Amazon Science</li>
+                <li>Press releases</li>
+                <li>Amazon Science</li>
+                <li>Press releases</li>
+                <li>Amazon Science</li>
+            </div>
+            <div class="part1">
+                <h1>Let Us Help You</h1>
+                <li>Covid-19 and Amazon</li>
+                <li>Your Account</li>
+                <li>Return Center</li>
+                <li>100% protection</li>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
